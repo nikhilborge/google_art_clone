@@ -4,15 +4,15 @@ import playStore from "../../assets/images/play_store.png";
 import qr from "../../assets/images/qr.png";
 const Section1 = () => {
   return (
-    <section class="overflow-hidden">
-        <div class="px-8 py-5 pt-24">
+    <section className="overflow-hidden">
+        <div className="px-8 py-5 pt-24">
           <div className="text-center mb-4">
             <h1 className="text-4xl font-base">Where would you like to go?</h1>
             <p>Choose your experience</p>
           </div>
 
           <div className="py-4">
-            <div class="grid grid-flow-col items-center justify-center auto-cols-max mx-auto gap-4">
+            <div className="grid grid-flow-col items-center justify-center auto-cols-max mx-auto gap-4">
               <ExploreCard
                 title="Virtual Tour"
                 name="Lincon Memorial"
