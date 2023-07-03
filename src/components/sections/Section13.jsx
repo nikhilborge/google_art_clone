@@ -21,7 +21,7 @@ const Section13 = () => {
               </div>
             </div>
 
-            <div className="group relative w-full h-64 sm:h-96 bg-slate-800">
+            <div className="group relative w-full h-64 sm:h-96 bg-slate-800 rounded-lg">
               <img
                 className="w-full h-full object-cover opacity-50"
                 src="https://placehold.co/600x400@3x.png"

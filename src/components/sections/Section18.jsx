@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import HeadTitle from "../ui/HeadTitle";
 
 const Section18 = () => {
   const settings = {
@@ -33,13 +34,7 @@ const Section18 = () => {
   return (
     <section className="overflow-hidden">
       <div className="py-12 mx-4 sm:mx-8 md:mx-16 lg:mx-48">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-base">Recommended for you</h2>
-          <span>
-            Discover popular artworks and hidden gems from around the world
-          </span>
-        </div>
-
+      <HeadTitle title="Recommended for you" subTitle="Discover popular artworks and hidden gems from around the world"/>
         <Slider {...settings}>
           <div className="rounded-lg mx-2">
             <div className="group relative w-min-72 mx-2 h-64 overflow-hidden cursor-pointer flex justify-center items-center">

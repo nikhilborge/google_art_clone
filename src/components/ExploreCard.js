@@ -10,7 +10,7 @@ const ExploreCard = ({ title, name, sub, img }) => {
           alt="Card"
         />
         <div className="absolute top-0 left-0 right-0 h-full p-4 text-white flex flex-col justify-center">
-          <div className="text-center flex items-center flex-col justify-around">
+          <div className="text-center flex items-center flex-col justify-between h-full">
             <div className="mb-4">
               <p className="text-2xl font-base">{title}</p>
             </div>

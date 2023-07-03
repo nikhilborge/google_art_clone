@@ -44,7 +44,7 @@ const Section4 = () => {
               {cards.map((card, index) => (
                 <div
                   key={index}
-                  className={`transition-transform duration-300 rounded-lg border border-slate-800 border-2 bg-slate-500 hover:z-10 hover:scale-105 w-full sm:w-64 h-96 ${
+                  className={`transition-transform duration-300 z-[${index}] rounded-lg border border-slate-800 border-2 bg-slate-500 hover:z-10 hover:scale-105 w-full sm:w-64 h-96 ${
                     activeCard === index ? "z-20" : ""
                   }`}
                   onMouseEnter={() => handleCardHover(index)}

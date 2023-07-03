@@ -1,6 +1,29 @@
 import React from "react";
+import HeadTitle from "../ui/HeadTitle";
 
 const Section15 = () => {
+  const exploredata = [
+    {
+      img: "https://placehold.co/600x400@3x.png",
+      logo:"Logo",
+      content:"UNESCO World Heritage The United Nations Education",
+    },
+    {
+      img: "https://placehold.co/600x400@3x.png",
+      logo:"Logo",
+      content:"UNESCO World Heritage The United Nations Education",
+    },
+    {
+      img: "https://placehold.co/600x400@3x.png",
+      logo:"Logo",
+      content:"UNESCO World Heritage The United Nations Education",
+    },
+    {
+      img: "https://placehold.co/600x400@3x.png",
+      logo:"Logo",
+      content:"UNESCO World Heritage The United Nations Education",
+    },
+  ];
   return (
     <section className="overflow-hidden">
       <div className="">
@@ -31,71 +54,20 @@ const Section15 = () => {
           </div>
 
           <div>
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-base">
-                Explore collections preserving our past
-              </h2>
-              <p>Keeping our shared history alive</p>
-            </div>
+            <HeadTitle
+              title=" Explore collections preserving our past"
+              subTitle="Keeping our shared history alive"
+            />
             <div className="flex flex-wrap justify-center gap-4">
-              <div className="w-full sm:w-auto mb-8 sm:mb-0 mx-auto">
-                <div className="transition-transform duration-300 rounded-lg">
-                  <div className="group relative w-80 sm:w-full h-40 rounded-lg overflow-hidden">
-                    <div className="bg-cover h-full">
-                      <img
-                        className="w-full h-full object-cover transition-transform duration-300 transform-gpu scale-100 group-hover:scale-105"
-                        src="https://placehold.co/600x400@3x.png"
-                        alt="Card"
-                      />
-                    </div>
-                    <div className="absolute bottom-0 left-0 right-0">
-                      <div className="flex justify-center items-end h-full">
-                        <div className="p-4 bg-white rounded-tl-lg rounded-tr-lg w-40 h-24">
-                          <div className="text-center">
-                            <span>Logo</span>
-                            <p className="text-xs">
-                              UNESCO World Heritage The United Nations Education
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full sm:w-auto mb-8 sm:mb-0 mx-auto">
-                <div className="transition-transform duration-300 rounded-lg">
-                  <div className="group relative w-80 sm:w-full h-40 rounded-lg overflow-hidden">
-                    <div className="bg-cover h-full">
-                      <img
-                        className="w-full h-full object-cover transition-transform duration-300 transform-gpu scale-100 group-hover:scale-105"
-                        src="https://placehold.co/600x400@3x.png"
-                        alt="Card"
-                      />
-                    </div>
-                    <div className="absolute bottom-0 left-0 right-0">
-                      <div className="flex justify-center items-end h-full">
-                        <div className="p-4 bg-white rounded-tl-lg rounded-tr-lg w-40 h-24">
-                          <div className="text-center">
-                            <span>Logo</span>
-                            <p className="text-xs">
-                              UNESCO World Heritage The United Nations Education
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
+            {exploredata?.map((ele, idx) => (
               <div className="w-full sm:w-auto mb-8 sm:mb-0 mx-auto">
                 <div className="transition-transform duration-300 rounded-lg">
                   <div className="group relative w-80 sm:w-full h-40 rounded-lg overflow-hidden">
                     <div className="bg-cover h-full">
                       <img
                         className="w-full h-full object-cover transition-transform duration-300 transform-gpu scale-100 group-hover:scale-105"
-                        src="https://placehold.co/600x400@3x.png"
+                        src={ele?.img}
                         alt="Card"
                       />
                     </div>
@@ -103,9 +75,9 @@ const Section15 = () => {
                       <div className="flex justify-center items-end h-full">
                         <div className="p-4 bg-white rounded-tl-lg rounded-tr-lg w-40 h-24">
                           <div className="text-center">
-                            <span>Logo</span>
+                            <span>{ele?.logo}</span>
                             <p className="text-xs">
-                              UNESCO World Heritage The United Nations Education
+                              {ele?.content}
                             </p>
                           </div>
                         </div>
@@ -114,36 +86,14 @@ const Section15 = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="w-full sm:w-auto mb-8 sm:mb-0 mx-auto">
-                <div className="transition-transform duration-300 rounded-lg">
-                  <div className="group relative w-80 sm:w-full h-40 rounded-lg overflow-hidden">
-                    <div className="bg-cover h-full">
-                      <img
-                        className="w-full h-full object-cover transition-transform duration-300 transform-gpu scale-100 group-hover:scale-105"
-                        src="https://placehold.co/600x400@3x.png"
-                        alt="Card"
-                      />
-                    </div>
-                    <div className="absolute bottom-0 left-0 right-0">
-                      <div className="flex justify-center items-end h-full">
-                        <div className="p-4 bg-white rounded-tl-lg rounded-tr-lg w-40 h-24">
-                          <div className="text-center">
-                            <span>Logo</span>
-                            <p className="text-xs">
-                              UNESCO World Heritage The United Nations Education
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            ))}
+              
             </div>
 
             <div className="flex items-center justify-center mt-12">
-                <button className="bg-[#1A73E8] px-6 py-2 rounded-lg text-white w-fit">More Collections</button>
+              <button className="bg-[#1A73E8] px-6 py-2 rounded-lg text-white w-fit">
+                More Collections
+              </button>
             </div>
           </div>
         </div>

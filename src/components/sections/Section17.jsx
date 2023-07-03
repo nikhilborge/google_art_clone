@@ -7,9 +7,9 @@ const Section17 = () => {
         <div className="py-12 mx-4 sm:mx-8 md:mx-16 lg:mx-48">
           <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start sm:justify-center">
             <div className="w-full sm:w-1/2">
-              <h2 className="text-4xl mb-4">Museum spotlight</h2>
+              <h2 className="text-4xl mb-4 font-medium">Museum spotlight</h2>
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                <p>The Strong</p>
+                <p className="text-lg">The Strong</p>
                 <div>
                   <p className="py-4">
                     The Strong is a highly interactive, collections-based museum
