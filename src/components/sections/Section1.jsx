@@ -13,32 +13,36 @@ const Section1 = () => {
         </div>
 
         <div className="py-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mx-auto max-w-screen-lg">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mx-auto max-w-screen-lg items-center justify-evenly">
             <ExploreCard
               title="Virtual Tour"
               name="Lincon Memorial"
               sub="Explore the neoclassical temple"
+              img="https://lh3.googleusercontent.com/ci/AJFM8rz5hz87icaFtSHCaadNZ8zjMfF9JHCwNoedbr8xCGrG8TZnfDFu0BFb1YG_Nu6LDKp1gMe_S3M=w360-c-h576-rw-v1"
             />
             <ExploreCard
               title="Game"
               name="Into Nature"
               sub="A Moment of claim with the game"
+              img="https://lh3.googleusercontent.com/ci/AJFM8rxGjjnciWpGuwx8TltBHFNG6dftu70koZCy-mjEG3nH4wr8YJKhHZciJCHNLLpwc0J2FWkJ7YQ=w360-c-h576-rw-v1"
             />
             <ExploreCard
               title="Museum guide"
               name="A Manga Museum"
               sub="Inside the Kitakyushu Museum"
+              img="https://lh3.googleusercontent.com/ci/AJFM8rw-Wa9Kw1k96nf4M1vy_9PKrkEC3tSRPI6WqaQBUimvyMaX6Pt4xXk2Rgya4545UZQZNAXjbM8=w360-c-h576-rw-v1"
             />
             <ExploreCard
               title="Art Explorer"
               name="Barcelona"
               sub="Tour the best of the city Culture"
+              img="https://lh3.googleusercontent.com/ci/AJFM8rzuGecfbSG3px8sFH-LFTDkVtcEh7nAM9kDtpep8j1uJpaZ1vwd0Idv4_oGWiPwkXkltobdpVE=w360-c-h576-rw-v1"
             />
           </div>
         </div>
         
         <div className="py-4 mx-auto max-w-screen-lg">
-          <div className="bg-[#1A73E8] p-6 rounded-lg flex flex-col sm:flex-row items-center">
+          <div className="bg-[#1A73E8] p-6 rounded-lg flex flex-col sm:flex-row items-center justify-between">
             <span className="text-white text-4xl mr-4">G</span>
             <div className="text-center sm:text-left">
               <h3 className="text-xl font-base text-white">Play on the app</h3>

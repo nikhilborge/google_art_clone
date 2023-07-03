@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="flex flex-wrap items-center">
         <div className="w-auto hidden lg:block">
           <ul className="flex items-center mr-10">
-            <li className="font-heading mr-9 text-gray-900 hover:text-gray-700 text-lg border-b-4 border-gray-500"><a to="/">Home</a></li>
+            <li className="font-heading mr-9 text-gray-900 hover:text-gray-700 text-lg border-b-4 border-[#1A73E8]"><a to="/">Home</a></li>
             <li className="font-heading mr-9 text-gray-900 hover:text-gray-700 text-lg"><a to="explore">Explore</a></li>
             <li className="font-heading mr-9 text-gray-900 hover:text-gray-700 text-lg"><a to="/play">Play</a></li>
             <li className="font-heading mr-9 text-gray-900 hover:text-gray-700 text-lg"><a to="/nearby">Nearby</a></li>
@@ -27,8 +27,8 @@ const Navbar = () => {
         <div className="w-auto hidden lg:block">
           <button className="group relative p-0.5 font-heading block w-full md:w-auto text-lg text-gray-900 font-medium bg-gradient-cyan overflow-hidden rounded-10">
             <div className="absolute top-0 left-0 transform -translate-y-full group-hover:-translate-y-0 h-full w-full bg-gradient-cyan transition ease-in-out duration-500"></div>
-            <div className="py-2 px-5 bg-white rounded-lg">
-              <p className="relative z-10">Sign In</p>
+            <div className="">
+              <button className="relative z-10 bg-[#1A73E8] px-6 py-2 rounded-lg text-white">Sign In</button>
             </div>
           </button>
         </div>

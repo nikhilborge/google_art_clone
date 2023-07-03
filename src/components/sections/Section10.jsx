@@ -1,14 +1,12 @@
 import React from "react";
+import HeadTitle from "../ui/HeadTitle";
 
 const Section10 = () => {
   return (
     <section className="overflow-hidden">
       <div className="">
         <div className="py-12 mx-4 sm:mx-8 md:mx-16 lg:mx-48">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-base">Accessories from the ages</h2>
-            <p>Discover jewelry from around the world</p>
-          </div>
+        <HeadTitle title="Accessories from the ages" subTitle="Discover jewelry from around the world"/>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="transition-transform duration-300 rounded-lg w-full">
