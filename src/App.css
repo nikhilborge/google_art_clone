@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 907px)
+
+{
+
+  .small-disable{
+
+    /* width: 20%; */
+
+    display: none;
+
+  }
+
+ 
+
+}

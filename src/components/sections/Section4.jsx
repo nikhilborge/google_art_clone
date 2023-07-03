@@ -30,8 +30,6 @@ const Section4 = () => {
     },
   ];
 
-  
-
   return (
     <section className="overflow-hidden">
       <div className="bg-[#FDC69C]">
@@ -44,9 +42,9 @@ const Section4 = () => {
               {cards.map((card, index) => (
                 <div
                   key={index}
-                  className={`transition-transform duration-300 rounded-lg border border-slate-800 border-2 bg-slate-500 hover:z-10 hover:scale-105 w-full sm:w-64 h-96 ${
+                  className={` ${index >= cards.length - 3 ? 'small-disable' : ''}  transition-transform duration-300 z-[${index}] rounded-lg border border-slate-800 border-2 bg-slate-500 hover:z-10 hover:scale-105 w-full sm:w-64 h-96 ${
                     activeCard === index ? "z-20" : ""
-                  }`}
+                  } sm:mb-4 md:mb-8`}
                   onMouseEnter={() => handleCardHover(index)}
                 >
                   <div className="group relative w-full h-full rounded-lg overflow-hidden">
